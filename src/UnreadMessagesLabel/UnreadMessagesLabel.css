@@ -1,0 +1,32 @@
+.unread-label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.unread-label__text {
+  font-size: 14px;
+  color: #facc15;
+}
+
+.unread-label__icon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.unread-label__badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ef4444;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 50%;
+}
