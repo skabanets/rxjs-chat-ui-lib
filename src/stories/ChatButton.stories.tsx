@@ -16,7 +16,7 @@ export const SendButton: StoryObj<typeof ChatButton> = {
   args: {
     label: "",
     onClick: () => alert("Button clicked"),
-    icon: <IoSend />,
+    icon: <IoSend style={{ width: 24, height: 24 }} />,
     variant: "primary",
   },
 };
