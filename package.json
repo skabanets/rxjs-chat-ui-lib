@@ -1,13 +1,13 @@
 {
   "name": "rxjs-chat-ui-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "./dist/index.js",
   "exports": {
     "import": "./dist/index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pub": "webpack && npm version patch && npm publish"
   },
   "keywords": [],
   "author": "skabanets",
@@ -28,7 +28,7 @@
   "peerDependencies": {
     "react": "*",
     "react-dom": "*",
-    "react-icons": "^4.0.0"
+    "react-icons": "*"
   },
   "files": [
     "dist"
