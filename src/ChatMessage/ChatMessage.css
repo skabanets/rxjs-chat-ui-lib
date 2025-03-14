@@ -1,0 +1,61 @@
+.message-item {
+  position: relative;
+  padding: 12px 12px;
+  max-width: 70%;
+  border-radius: 16px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.message-item.user {
+  background-color: #289df6;
+  margin-left: auto;
+}
+
+.message-item.chatbot {
+  background-color: #1159ac;
+  margin-right: auto;
+}
+
+.message-item.user::after,
+.message-item.chatbot::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid transparent;
+  z-index: 1;
+  bottom: 0;
+}
+
+.message-item.user::after {
+  border-left: 20px solid #289df6;
+  right: -25px;
+}
+
+.message-item.chatbot::after {
+  border-right: 20px solid #1159ac;
+  left: -25px;
+}
+
+.message-item.unread {
+  filter: blur(8px);
+  cursor: pointer;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 4px;
+}
+
+.timestamp.left {
+  text-align: left;
+}
+
+.timestamp.right {
+  text-align: right;
+}
