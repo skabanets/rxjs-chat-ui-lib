@@ -6,7 +6,7 @@ interface ChatMessageProps {
   text: string;
   unread: boolean;
   timestamp: string;
-  onMessageClick: (unread: boolean) => void;
+  onMessageClick?: () => void;
 }
 
 const ChatMessage: FC<ChatMessageProps> = ({
@@ -21,7 +21,7 @@ const ChatMessage: FC<ChatMessageProps> = ({
       className={`message-item ${sender === "user" ? "user" : "chatbot"} ${
         unread ? "unread" : ""
       }`}
-      onClick={() => onMessageClick(unread)}
+      onClick={onMessageClick}
     >
       <p>{text}</p>
       <p className={`timestamp ${sender === "user" ? "left" : "right"}`}>

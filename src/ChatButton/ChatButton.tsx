@@ -40,7 +40,7 @@ const ChatButton: FC<ChatButtonProps> = ({
       onClick={onClick}
       disabled={disabled}
     >
-      {icon && <span>{icon}</span>} {label}
+      {label} {icon && <span>{icon}</span>}
     </button>
   );
 };
