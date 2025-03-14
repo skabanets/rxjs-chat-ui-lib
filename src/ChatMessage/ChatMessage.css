@@ -2,7 +2,7 @@
   position: relative;
   padding: 12px 12px;
   max-width: 70%;
-  border-radius: 16px;
+  border-radius: 12px;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease, opacity 0.3s ease;
@@ -24,21 +24,20 @@
   position: absolute;
   width: 0;
   height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid transparent;
-  z-index: 1;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid transparent;
   bottom: 0;
 }
 
 .message-item.user::after {
-  border-left: 20px solid #289df6;
-  right: -25px;
+  border-left: 16px solid #289df6;
+  right: -20px;
 }
 
 .message-item.chatbot::after {
-  border-right: 20px solid #1159ac;
-  left: -25px;
+  border-right: 16px solid #1159ac;
+  left: -20px;
 }
 
 .message-item.unread {
